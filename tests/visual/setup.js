@@ -3,7 +3,7 @@ const filePaths = require('../../conf/file-paths.js');
 const path = require('path');
 const glob = require('glob');
 
-const PLAYGROUND_URL = 'http://playground:8989/';
+const PLAYGROUND_URL = 'http://localhost:8989/';
 const COMPONENTS_DIR = filePaths.src;
 const COMPONENTS_PATTERN = path.join('*', 'fixtures', '**.js');
 

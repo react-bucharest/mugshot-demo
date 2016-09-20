@@ -9,7 +9,6 @@ const WebdriverIOAdapter = require('mugshot-webdriverio');
 const LooksSameAdapter = require('mugshot-looks-same');
 
 const BROWSER = {
-  host: 'hub',
   desiredCapabilities: {
     browserName: 'chrome'
   }
@@ -36,7 +35,7 @@ exports.testVisuals = function(urls, firstBaseline, directory) {
 
     before(function(done) {
       webdriverioInstance = webdriverio.remote(BROWSER).init()
-          .setViewportSize(VIEWPORT_SIZE)
+          .windowHandleSize(VIEWPORT_SIZE)
           .then(function() {
             browser = new WebdriverIOAdapter(webdriverioInstance);
             done();
