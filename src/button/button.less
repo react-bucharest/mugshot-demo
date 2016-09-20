@@ -1,0 +1,28 @@
+.button {
+  box-sizing: border-box;
+  height: 40px;
+  background-color: coral;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 0 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color .3s;
+  line-height: 1.2;
+  text-shadow: 0 1px 0 #333;
+  box-shadow: 0 1px 0 darken(coral, 30%);
+
+  &:hover {
+    background-color: darken(coral, 10%);
+  }
+
+  &.blue-button {
+    background-color: deepskyblue;
+    box-shadow: 0 1px 0 darken(deepskyblue, 30%);
+
+    &:hover {
+      background-color: darken(deepskyblue, 10%);
+    }
+  }
+}

@@ -9,6 +9,7 @@
     "test:visual": "mocha tests/visual/index.js --timeout 6000 -R mocha-mugshot-reporter"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "lodash": "~4.13.1",
     "react": "~0.13.3",
     "react-component-tree": "~0.2.2"

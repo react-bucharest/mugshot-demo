@@ -1,3 +1,4 @@
 export default {
-  label: 'Hello world!'
+  label: 'Hello world!',
+  onClick: function() {}
 }
