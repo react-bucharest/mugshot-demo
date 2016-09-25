@@ -30,10 +30,7 @@ var config = {
   module: {
     preLoaders: [{
       test: /\.jsx?$/,
-      exclude: [
-        /node_modules/,
-        /vendor/
-      ],
+      exclude: /node_modules/,
       loader: 'babel',
       query: {
         plugins: ['react-transform'],
@@ -58,26 +55,12 @@ var config = {
     }, {
       test: /\.css$/,
       loader: 'style!css!postcss'
-    }, {
-      test: /\.png$/,
-      loader: 'url?limit=100000&name=[path][name].[ext]'
-    }, {
-      test: /\.(gif|eot|svg|ttf|woff|woff2|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      exclude: /assets\/svg/,
-      loader: 'file?name=[path][name].[ext]'
-    }, {
-      test: /\.svg$/,
-      include: /assets\/svg/,
-      loader: 'svg-inline'
     }]
   },
 
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
-    new webpack.DefinePlugin({
-      RNG_SEED: JSON.stringify(argv.seed)
-    })
+    new webpack.NoErrorsPlugin()
   ]
 };
 
