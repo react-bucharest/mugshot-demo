@@ -2,10 +2,12 @@
   "name": "mugshot-demo",
   "version": "1.0.0",
   "description": "Visual regression testing demo with Mugshot and React Component Playground",
+  "license" : "ISC",
   "scripts": {
     "browser": "phantomjs --webdriver=4444",
     "playground": "node ./playground/server.js",
-    "test:visual": "mocha tests/visual/index.js --timeout 6000 -R mocha-mugshot-reporter"
+    "test:visual": "mocha tests/visual/index.js --timeout 6000 -R mocha-mugshot-reporter",
+    "docker:test:visual": "./tests/visual/run-tests.sh"
   },
   "dependencies": {
     "classnames": "^2.2.5",
