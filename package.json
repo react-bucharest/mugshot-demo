@@ -2,7 +2,7 @@
   "name": "mugshot-demo",
   "version": "1.0.0",
   "description": "Visual regression testing demo with Mugshot and React Component Playground",
-  "license" : "ISC",
+  "license": "ISC",
   "scripts": {
     "browser": "phantomjs --webdriver=4444",
     "playground": "node ./playground/server.js",
