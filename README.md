@@ -1,5 +1,7 @@
 # mugshot-demo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/react-bucharest/mugshot-demo.svg)](https://greenkeeper.io/)
+
 *Visual regression testing demo with [Mugshot](https://github.com/uberVU/mugshot) and [React Component Playground](https://github.com/skidding/react-component-playground)*
 
 ## How to run in Docker
