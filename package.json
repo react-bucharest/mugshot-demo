@@ -11,8 +11,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "lodash": "~4.13.1",
-    "react": "~0.13.3",
-    "react-component-tree": "~0.2.2"
+    "react": "~0.13.3"
   },
   "devDependencies": {
     "babel": "~5.8.38",
@@ -31,7 +30,6 @@
     "mugshot": "^0.3.2",
     "mugshot-looks-same": "^1.0.0",
     "mugshot-webdriverio": "^1.0.0",
-    "phantomjs-prebuilt": "~2.1.7",
     "postcss-loader": "~0.7.0",
     "react-querystring-router": "~0.2.0",
     "react-transform-catch-errors": "~1.0.0",
@@ -42,7 +40,6 @@
     "webdriverio": "^4.6.2",
     "webpack": "~1.12.4",
     "webpack-dev-middleware": "~1.2.0",
-    "webpack-hot-middleware": "~2.5.0",
-    "yargs": "~3.23.0"
+    "webpack-hot-middleware": "~2.5.0"
   }
 }

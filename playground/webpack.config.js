@@ -1,8 +1,7 @@
 var path = require('path'),
     webpack = require('webpack'),
     config = require('../conf/file-paths.js'),
-    rootPath = config.root,
-    argv = require('yargs').argv;
+    rootPath = config.root;
 
 var config = {
   devtool: 'cheap-module-sourcemap',
@@ -51,9 +50,11 @@ var config = {
 
     loaders: [{
       test: /\.less$/,
+      exclude: /node_modules/,
       loader: 'style!css!postcss!less'
     }, {
       test: /\.css$/,
+      exclude: /node_modules/,
       loader: 'style!css!postcss'
     }]
   },
