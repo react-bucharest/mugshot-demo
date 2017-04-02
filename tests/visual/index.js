@@ -10,5 +10,6 @@ const options = {
   isNotFirstBaseline: false
 };
 
-test.testVisuals(setup.getUrls(ignored), options.isFirstBaseline,
-    'tests/visual/visual-test');
+test.testVisuals(setup.getUrls(ignored),
+                 options.isFirstBaseline,
+                 'tests/visual/visual-test');
