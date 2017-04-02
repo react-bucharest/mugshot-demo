@@ -11,7 +11,8 @@ const LooksSameAdapter = require('mugshot-looks-same');
 const BROWSER = {
   desiredCapabilities: {
     browserName: 'chrome'
-  }
+  },
+  host: 'selenium'
 };
 
 const VIEWPORT_SIZE = {
@@ -21,8 +22,7 @@ const VIEWPORT_SIZE = {
 
 const COMPONENT_SELECTOR = '[class^="component-playground__preview"] > *';
 
-// The time limit for a page to fully load:
-// images, fonts, etc.
+// The time limit for a page to fully load:images, fonts, etc.
 const LOAD_TIMEOUT = 2 * 1000;
 
 exports.testVisuals = function(urls, firstBaseline, directory) {
@@ -55,6 +55,20 @@ exports.testVisuals = function(urls, firstBaseline, directory) {
                 _this = this;
 
             return webdriverioInstance.url(item.url)
+                // Set the time limit for the async script to finish.
+                .timeoutsAsyncScript(LOAD_TIMEOUT)
+                // Execute a script in the page context: wait until the fonts
+                // are loaded.
+                .executeAsync(function(done) {
+                  // Check every 100ms if the page is ready i.e. the fonts.satus
+                  // is 'loaded'.
+                  let interval = setInterval(function() {
+                    if (document.fonts.status === 'loaded') {
+                      clearInterval(interval);
+                      done();
+                    }
+                  }, 100);
+                })
                 .then(function() {
                   mugshotOptions.rootDirectory = path.join(directory,
                       component);
