@@ -5,7 +5,7 @@
   "license": "ISC",
   "scripts": {
     "playground": "node ./playground/server.js",
-    "test:visual": "mocha tests/visual/index.js --timeout 6000 -R mocha-mugshot-reporter",
+    "test:visual": "mocha tests/visual/index.js --timeout 60000 -R mocha-mugshot-reporter",
     "docker:test:visual": "sh ./tests/visual/run-tests.sh"
   },
   "dependencies": {
