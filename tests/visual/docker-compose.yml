@@ -2,14 +2,14 @@ version: '2.1'
 
 services:
   selenium:
-    image: selenium/hub
+    image: selenium/hub:3.2.0
     expose:
       - "4444"
     depends_on:
       - chrome
 
   chrome:
-    image: selenium/node-chrome
+    image: selenium/node-chrome:3.2.0
     environment:
       - HUB_PORT_4444_TCP_PORT=4444
       - HUB_PORT_4444_TCP_ADDR=selenium
