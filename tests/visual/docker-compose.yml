@@ -21,7 +21,6 @@ services:
       - "8989"
     volumes:
       - ../../conf:/usr/src/app/conf:ro
-      - ../../playground:/usr/src/app/playground:ro
       - ../../src:/usr/src/app/src:ro
     command: npm run playground
 

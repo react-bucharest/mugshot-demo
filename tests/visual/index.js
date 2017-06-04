@@ -11,5 +11,5 @@ const options = {
 };
 
 test.testVisuals(setup.getUrls(ignored),
-                 options.isFirstBaseline,
+                 options.isNotFirstBaseline,
                  'tests/visual/visual-test');

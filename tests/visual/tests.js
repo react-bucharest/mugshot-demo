@@ -20,7 +20,7 @@ const VIEWPORT_SIZE = {
   height: 768
 };
 
-const COMPONENT_SELECTOR = '[class^="component-playground__preview"] > *';
+const COMPONENT_SELECTOR = '[class^="component-playground__frame"]';
 
 // The time limit for a page to fully load:images, fonts, etc.
 const LOAD_TIMEOUT = 2 * 1000;
