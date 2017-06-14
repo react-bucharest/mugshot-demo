@@ -34,7 +34,7 @@
     "mugshot-looks-same": "^1.0.0",
     "mugshot-webdriverio": "^1.0.0",
     "react-cosmos-webpack": "^2.0.0-beta.14",
-    "style-loader": "~0.16.1",
+    "style-loader": "~0.18.2",
     "webdriverio": "^4.6.2",
     "webpack": "~2.3.2"
   }
