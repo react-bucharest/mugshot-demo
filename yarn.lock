@@ -949,9 +949,9 @@ chai-mugshot@~0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/chai-mugshot/-/chai-mugshot-0.3.1.tgz#c87a0f2c18106a2b1a9c391a489d2f27fa519b9d"
 
-chai@~4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/chai/-/chai-4.0.2.tgz#2f7327c4de6f385dd7787999e2ab02697a32b83b"
+chai@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/chai/-/chai-4.1.0.tgz#331a0391b55c3af8740ae9c3b7458bc1c3805e6d"
   dependencies:
     assertion-error "^1.0.1"
     check-error "^1.0.1"
@@ -3636,14 +3636,14 @@ react-cosmos@^2.0.0-beta.14:
     react-cosmos-utils "^2.0.0-beta.11"
     react-querystring-router "^2.0.0-beta.13"
 
-react-dom@15.5.4:
-  version "15.5.4"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.5.4.tgz#ba0c28786fd52ed7e4f2135fe0288d462aef93da"
+react-dom@15.6.1:
+  version "15.6.1"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.1.tgz#2cb0ed4191038e53c209eb3a79a23e2a4cf99470"
   dependencies:
     fbjs "^0.8.9"
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
-    prop-types "~15.5.7"
+    prop-types "^15.5.10"
 
 react-querystring-router@^2.0.0-beta.13:
   version "2.0.0-beta.13"
